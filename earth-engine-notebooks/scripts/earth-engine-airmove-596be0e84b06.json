@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "earth-engine-airmove",
+  "private_key_id": "596be0e84b06c9d4668ee14f978fc2abe3a9b098",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDk36xkTZ7Snyza\nppL1jhXr3krayj4tKjIqYvfFIxD1feB9yetYTyJExZoN/UoZsNmKIZAqkvSu7S7R\nlsKNLqaH17/TgYXZIj1QdGDLAPJeXhCC6ZyzA5G1lpodMWyADdA41GBmJ6v1nEKb\ntfT5HDT7Q94krd/9KDy/jUejE+gML8GEZTu55jsLA8s6QfAdAt6SA0HR2erQmvDP\n/R9h0EPJn07H9Jv3DH9cR4FptF+LfxP42fn9wkp2UPugDEcQmxNfUgiys1oDaKaK\n6vDN+YWEz1nWS7HcniERz0MiJW01PWMFANyZ3X0HoPOP3ixXNRYcy+LM18ocExl2\nGeBI6KqVAgMBAAECggEANUwnC4aN1TNvEQ3YTCmFzlMKMHAHUaIxY3B/jV9QnDJv\nfCtwzDRFYSl46ggRYPEvf3y4Y0mshC3EiNcoQBNcgWbLC3hukHVqPNmVDsEOL86M\n3seDD6bloBlNkz3Gq/1Lf2hpeHCFmWEFm9ggD4Czj82qpfT9o6jimKLQS1gf4fIu\nRBsYhijTdQOS9Ba56EchHpHF4633JNk3o5C9hRZzINUZnxxFbs+HdNAYaZ8DHzK9\nQHAANKaHx8rH7jjFESr+Uy0UBJktCciyDZ+4EcHfhvBFTsmz+D6oFGlodxjR7nPj\nUw4/b0nvRkpCCgkHdo0FxHxcI5I5CU5+VPmfc1NM0QKBgQD35QyC7O5XuCM/q5eH\nyKAzNWLY/DTjh2JATGyAiA+ib3vcQwtq8mBFF5AkVRCULx0Mp7amIqO5Cbai2qK9\nbLaRmmfRkEq+01SOU9tZfNgmj8SqAgxqbH8GSCjQ4s6ArJ6kr5T2GxsgB8XwykHJ\n2ztQ7jqDY+dOYg3kCWv1I+I3aQKBgQDsW2nJmISOBWNVm84lJhRcT1W2616lj/xi\n5zbcMmV73Yb4O0HM94oHYu0A+mGKW3AAmrJ5+zI4YZTKbu3oHR52RqgnuWx+21bq\n4JoXu4N2PjS6MdBOBdIwd52xM3eMo6EwGPUhbCRbeB4rWi3b+o3l7vdZfWGQpMRS\n2NlKIS4ATQKBgQDfgkOfoKTdrocJl1tO8FORGGeBoRTGuYCa3M1Prl36ZW5WEJUw\n3kxyv2YVfCUwlrIogOcsMDtSUTG88EifZm/OJFvLFcBvAfhRQ8aYjvoM+r+lUaeE\nJUL6lQFIJddvKTT44975b0MrxBZynspmiCaZN9LGOMOLZtmDbANMygfjUQKBgE08\ncg1WsbpXOGa5S1wIXY7sve3QbFVd//Ox6tN6BH+9nGVxt8bq/Uf8o8Y2C7nSt377\nDmeeFoMmICEmrsey/ElaPYj9pt6tfnGyg6hNtl/lZAWUUaWtcUo1TGqjjuV+cyXs\nge4yEI9zaShxh5ri/Yut01aDCmbh8OXBxv/aZ9XhAoGAbIIGX/cqJWpBA8eRhEHv\njEc10H+Hg7NkETqQKZeIguEgKXYNvnLF+lu6K5ui0GnrSEzEFkSSTJHWrMAOQ0aT\nU3P8/JoCKDf6GLJY2j5H0ypBD7WIbnAYGS/odwWHnNo2R14BpPUjiSIMm9WxPk3A\nv2mYRBXHdqK2Kv8xYnDCweg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "earth-engine-robot@earth-engine-airmove.iam.gserviceaccount.com",
+  "client_id": "105683465651356755168",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/earth-engine-robot%40earth-engine-airmove.iam.gserviceaccount.com"
+}
