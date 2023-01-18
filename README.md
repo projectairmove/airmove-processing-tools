@@ -42,9 +42,17 @@ export NCR_BOUNDS_FILE=/home/dev/airmove/airmove-processing-tools/shared/NCRBoun
 ```
 
 ## Storage
-All files are processed using Google Earth Engine and then automatically uploaded to a Google Drive linked to the given service account. To have access to this folders, contact the developers:
+All files are processed using Google Earth Engine and then automatically uploaded to a Google Drive linked to the given service account. To have write to these folders, contact the developers or the system admin:
 https://drive.google.com/drive/folders/1m1NYn1lWe8odC3Vks9QhZKhfleOR0Wq0
 
+Processed files directories:
+| Script | Default | Google Drive Directory |
+| ----- | ----- | ----- |
+| download_era5.py | ERA5 | https://drive.google.com/drive/folders/10M3Yk6W9YtKx30YbYDD7JYBuy2Njr5Yc |
+| download_landsat8.py | LANDSAT8 | https://drive.google.com/drive/folders/1p9rZ4MaS5rmuNsn8J3XLXZdk1tQYQ3Ar |
+| download_modis_aodb.py | MODIS_AODB | https://drive.google.com/drive/folders/1nSERd7-5W83q-Q6Q8DEYmRtRgF4t1JCg |
+| download_modis_aodg.py | MODIS_AODG | https://drive.google.com/drive/folders/12iQX6Z3UNRyGVH0T7rq0hOKcgg904wrF |
+| download_s5p_no2.py | S5P_NO2 | https://drive.google.com/drive/folders/1j1JeNb1sy2ZCaGgdiVVSGfGBehlxKzSw |
 
 ### download_era5.py
 
@@ -57,9 +65,6 @@ or, if you have set your environment variables...
 ```
 python download_era5.py
 ```
-
-Processed files directory:
-https://drive.google.com/drive/folders/10M3Yk6W9YtKx30YbYDD7JYBuy2Njr5Yc
 
 | Options | Description | Default |
 | ----- | ----- | ----- |
@@ -83,14 +88,6 @@ or, if you have set your environment variables...
 ```
 python download_landsat8.py --from-date 2023-01-17 --to-date 2023-01-18
 ```
-
-Processed files directories:
-| Script | Default | Google Drive Directory |
-| ----- | ----- | ----- |
-| download_landsat8.py | LANDSAT8 | https://drive.google.com/drive/folders/1p9rZ4MaS5rmuNsn8J3XLXZdk1tQYQ3Ar |
-| download_modis_aodb.py | MODIS_AODB | https://drive.google.com/drive/folders/1nSERd7-5W83q-Q6Q8DEYmRtRgF4t1JCg |
-| download_modis_aodg.py | MODIS_AODG | https://drive.google.com/drive/folders/12iQX6Z3UNRyGVH0T7rq0hOKcgg904wrF |
-| download_s5p_no2.py | S5P_NO2 | https://drive.google.com/drive/folders/1j1JeNb1sy2ZCaGgdiVVSGfGBehlxKzSw |
 
 The following options are also applicable for all the scripts below:
 | Options | Description | Default |
