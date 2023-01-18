@@ -1,10 +1,13 @@
 # airmove-processing-tools
 Automation scripts to download satellite data from different sources
 
-| Script | Description | Usage | 
+| Script | Description | Sample Usage | 
 | ----- | ----- | ----- |
-| download_era5.py | Download mean 2m air temp, total precipitation, u and v component of wind 10m from ERA5 satellite | python download_era5.py --from-date <yyyy-mm-dd> --to-date <yyyy-mm-dd> |
-
+| download_era5.py | Download mean 2m air temp, total precipitation, u and v component of wind 10m from ERA5 satellite | python download_era5.py --from-date 2023-01-17 --to-date 2023-01-18 |
+| download_landsat8.py | Download cloud cover data from landsat 8 | python download_landsat8.py --from date 2023-01-17 --to-date 2023-01-18 |
+| download_modis_aodb.py | Download MODIS AOD Blue data | python download_modis_aodb.py --from-date 2023-01-17 --to-date 2023-01-18 |
+| download_modis_aodg.py | Download MODIS AOD Green data | python download_modis_aodg.py --from-date 2023-01-17 --to-date 2023-01-18 |
+| download_s5p_no2.py | Download COPERNICUS NO2 data | python download_s5p_no2.py --from-date 2023-01-17 --to-date 2023-01-18 |
 
 
 
@@ -12,10 +15,8 @@ Automation scripts to download satellite data from different sources
 
 #### Debian
 ```
-conda create -n data-processing-tools python=3.7
+conda create -n airmove python=3.8
 conda activate data-processing-tools
-conda install -c menpo opencv
-conda install -c conda-forge gdal=2.4.4 rasterio pyproj pyqt
 pip install -r requirements.txt
 ```
 #### Windows
