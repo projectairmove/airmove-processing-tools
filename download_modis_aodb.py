@@ -26,9 +26,10 @@ yesterday = str(today - timedelta(days=1))
 @click.option('--log-dir', default="logs")
 @click.option('--service-account', envvar='AIRMOVE_SERVICE_ACCOUNT', default=None)
 @click.option('--service-file', envvar='AIRMOVE_SERVICE_FILE',default=None)
+@click.option('--ncr-bounds-file', envvar='NCR_BOUNDS_FILE', default='shared/NCRBoundary.json')
 def download_modis_aodb(
     drive_folder, local_folder, from_date, to_date, log_dir,
-    service_account, service_file
+    service_account, service_file, ncr_bounds_file
 ):
 
     logger = get_logger(
@@ -66,10 +67,7 @@ def download_modis_aodb(
           [120.88626682729029, 14.792458281417941],
           [120.88626682729029, 14.33788811927746]]], None, False)
 
-
-    ncr_bounds = '/home/dev/airmove/airmove-processing-tools/shared/NCRBoundary.json'
-
-    with open(ncr_bounds) as f:
+    with open(ncr_bounds_file) as f:
         ncr_shape = json.load(f)
     ncr_shape = ee.FeatureCollection(ncr_shape)
 
