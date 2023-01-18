@@ -20,7 +20,6 @@ yesterday = str(today - timedelta(days=1))
 
 @click.command()
 @click.option('--drive-folder', default="MODIS_AODG")
-@click.option('--local-folder', default="MODIS_AODG")
 @click.option('--from-date', default=yesterday)
 @click.option('--to-date', default=str(today))
 @click.option('--log-dir', default="logs")
@@ -28,7 +27,7 @@ yesterday = str(today - timedelta(days=1))
 @click.option('--service-file', envvar='AIRMOVE_SERVICE_FILE',default=None)
 @click.option('--ncr-bounds-file', envvar='NCR_BOUNDS_FILE', default='shared/NCRBoundary.json')
 def download_modis_aodg(
-    drive_folder, local_folder, from_date, to_date, log_dir,
+    drive_folder, from_date, to_date, log_dir,
     service_account, service_file, ncr_bounds_file
 ):
 

@@ -17,14 +17,13 @@ yesterday = str(today - timedelta(days=1))
 
 @click.command()
 @click.option('--drive-folder', default="ERA5")
-@click.option('--local-folder', default="ERA5")
 @click.option('--from-date', default=yesterday)
 @click.option('--to-date', default=str(today))
 @click.option('--log-dir', default="logs")
 @click.option('--service-account', envvar='AIRMOVE_SERVICE_ACCOUNT', default=None)
 @click.option('--service-file', envvar='AIRMOVE_SERVICE_FILE',default=None)
 def download_era5(
-    drive_folder, local_folder, from_date, to_date, log_dir,
+    drive_folder, from_date, to_date, log_dir,
     service_account, service_file
 ):
 
