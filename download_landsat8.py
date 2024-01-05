@@ -82,7 +82,7 @@ def download_landsat8(
         return image.updateMask(mask)
 
     ls08 = ee.ImageCollection(
-        'LANDSAT/LC08/C01/T1_SR').filter(
+        'LANDSAT/LC08/C02/T1_L2').filter(
             ee.Filter.eq('WRS_PATH', 116)).filter(
                 ee.Filter.eq('WRS_ROW', 50)).filterBounds(
                     ncr_shape).filterDate(
