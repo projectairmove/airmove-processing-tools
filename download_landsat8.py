@@ -75,9 +75,9 @@ def download_landsat8(
     * @return {ee.Image} cloudmasked Landsat 8 image
     '''
     def maskL8sr(image):
-        cloud_shadow_bit_mask = (1 << 3)
-        clouds_bit_mask = (1 << 5)
-        qa = image.select('pixel_qa')
+        cloud_shadow_bit_mask = (1 << 4)
+        clouds_bit_mask = (1 << 3)
+        qa = image.select('QA_PIXEL')
         mask = qa.bitwiseAnd(cloud_shadow_bit_mask).eq(0) and (qa.bitwiseAnd(clouds_bit_mask).eq(0))
         return image.updateMask(mask)
 
