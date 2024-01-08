@@ -72,7 +72,8 @@ def download_modis_aodb(
 
     _from = from_date.split("-")
     _to = to_date.split("-")
-    collection = ee.ImageCollection('MODIS/006/MCD19A2_GRANULES').select('Optical_Depth_047').filterBounds(ncr_shape)
+    #collection = ee.ImageCollection('MODIS/006/MCD19A2_GRANULES').select('Optical_Depth_047').filterBounds(ncr_shape)
+    collection = ee.ImageCollection('MODIS/061/MCD19A2_GRANULES').filter(ee.Filter.stringContains('system:index', 'h29v07')).select('Optical_Depth_047')
 
     ncr_bound = ncr_shape.geometry()
     startDate = ee.Date.fromYMD(int(_from[0]), int(_from[1]), int(_from[2]))
