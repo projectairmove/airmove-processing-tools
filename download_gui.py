@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 service_account = 'earth-engine-robot@earth-engine-airmove.iam.gserviceaccount.com'
 service_file = os.path.join(os.getcwd(), 'shared', 'service_account_file.json')
-#service_file = 'aaa'
+
 try:
   credentials = ee.ServiceAccountCredentials(service_account, service_file)
   ee.Initialize(credentials)
@@ -236,7 +236,7 @@ row4 = 120
 row5 = 275
 
 satelliteLabel.place(x = 10, y = row1, anchor = 'w')
-satelliteDropdown.place(x = 100, y = row1, anchor = 'w')
+satelliteDropdown.place(x = 100, y = row1, relwidth = 0.7, anchor = 'w')
 
 sDateLabel.place(x = 10, y = row2, anchor = 'w')
 startDate.place(x = 105, y = row2, anchor = 'w')
@@ -244,7 +244,7 @@ startDate.place(x = 105, y = row2, anchor = 'w')
 eDateLabel.place(x = 10, y = row3, anchor = 'w')
 endDate.place(x = 105, y = row3, anchor = 'w')
 
-console_text.place(x = 10, y = row4, anchor = 'nw')
+console_text.place(x = 10, y = row4, relwidth = 0.97, anchor = 'nw')
 
 console_text.insert(tk.END, 'Service account: earth-engine-robot@earth-engine-airmove.iam.gserviceaccount.com\n')
 console_text.insert(tk.END, 'Service file: {}\n'.format(service_file))
