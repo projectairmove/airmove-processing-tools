@@ -193,27 +193,27 @@ def run():
       return
     elif sat == 'ERA5':
       downloadERA5(str(sDate), str(eDate))
-      console_text.insert(tk.END, 'ERA5 Processing DONE\nFrom {} to {}\n'.format(str(sDate),str(eDate)))
+      console_text.insert(tk.END, 'ERA5 Processing from {} to {} \n'.format(str(sDate),str(eDate)))
       console_text.see('end')
     elif sat == 'Landsat 8':
       downloadL8(str(sDate), str(eDate))
-      console_text.insert(tk.END, 'Landsat 8 Processing DONE\nFrom {} to {}\n'.format(str(sDate),str(eDate)))
+      console_text.insert(tk.END, 'Landsat 8 Processing from {} to {} DONE\n'.format(str(sDate),str(eDate)))
       console_text.see('end')
     elif sat == 'MODIS AODB':
       downloadMODIS(str(sDate), str(eDate), 'blue')
-      console_text.insert(tk.END, 'MODIS AODB Processing DONE\nFrom {} to {}\n'.format(str(sDate),str(eDate)))
+      console_text.insert(tk.END, 'MODIS AODB Processing from {} to {} DONE\n'.format(str(sDate),str(eDate)))
       console_text.see('end')
     elif sat == 'MODIS AODG':
       downloadMODIS(str(sDate), str(eDate), 'green')
-      console_text.insert(tk.END, 'MODIS AODG Processing DONE\nFrom {} to {}\n'.format(str(sDate),str(eDate)))
+      console_text.insert(tk.END, 'MODIS AODG Processing from {} to {} DONE\n'.format(str(sDate),str(eDate)))
       console_text.see('end')
     elif sat == 'Sentinel 5P NO2':
       downloadS5P(str(sDate), str(eDate), 'NO2')
-      console_text.insert(tk.END, 'Sentinel5P NO2 Processing DONE\nFrom {} to {}\n'.format(str(sDate),str(eDate)))
+      console_text.insert(tk.END, 'Sentinel5P NO2 Processing from {} to {} DONE\n'.format(str(sDate),str(eDate)))
       console_text.see('end')
     elif sat == 'Sentinel 5P SO2':
       downloadS5P(str(sDate), str(eDate), 'SO2')
-      console_text.insert(tk.END, 'Sentinel5P SO2 Processing DONE\nFrom {} to {}\n'.format(str(sDate),str(eDate)))
+      console_text.insert(tk.END, 'Sentinel5P SO2 Processing from {} to {} DONE\n'.format(str(sDate),str(eDate)))
       console_text.see('end')
   except:
     console_text.insert(tk.END, 'Download Error\n')
