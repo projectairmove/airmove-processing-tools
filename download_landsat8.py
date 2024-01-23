@@ -66,6 +66,7 @@ def download_landsat8(
           [120.88626682729029, 14.33788811927746]]], None, False)
 
     with open(ncr_bounds_file) as f:
+        print(ncr_bounds_file)
         ncr_shape = json.load(f)
     ncr_shape = ee.FeatureCollection(ncr_shape)
 
