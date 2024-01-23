@@ -1,6 +1,6 @@
 #!/bin/bash
 LOG_DIR=../99-logs
-DOWNLOAD_DIR=../
+DOWNLOAD_DIR=~/AIRMOVE_PROCESSING_DOWNLOADS/
 PROCESSING_SCRIPTS_DIR=../../
 
 PROCESSING_ENV=airmove-processing-tools

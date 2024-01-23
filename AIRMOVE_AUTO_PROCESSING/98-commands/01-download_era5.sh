@@ -23,4 +23,4 @@ fi
 echo "Processing from $from_date to $to_date"
 #conda run -n $PROCESSING_ENV python $PROCESSING_SCRIPTS_DIR/download_era5.py --log-dir $today_log --from-date $from_date --to-date $to_date
 
-rclone copy processing_gdrive:AIRMOVE_PROCESSING/EE/ERA5/ $storage/ --max-age 7d --drive-shared-with-me --ignore-existing
+rclone copy processing_drive:AIRMOVE_PROCESSING/EE/ERA5/ $storage/ --max-age 7d --drive-shared-with-me --ignore-existing
