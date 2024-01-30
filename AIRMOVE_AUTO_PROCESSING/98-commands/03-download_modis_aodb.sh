@@ -1,6 +1,6 @@
 #!/bin/bash
 source ~/.bashrc
-source ./vars.sh
+source ~/airmove-processing-tools/AIRMOVE_AUTO_PROCESSING/98-commands/vars.sh
 
 now=$(date +%Y-%m-%d)
 to_date=$now
@@ -22,5 +22,7 @@ fi
 
 echo "Processing from $from_date to $to_date"
 conda run -n $PROCESSING_ENV python $PROCESSING_SCRIPTS_DIR/download_modis_aodb.py --log-dir $today_log --from-date $from_date --to-date $to_date
+
+sleep 60
 
 rclone copy processing_drive:AIRMOVE_PROCESSING/EE/MODIS_AODB/ $storage/  --max-age 7d --drive-shared-with-me --ignore-existing
